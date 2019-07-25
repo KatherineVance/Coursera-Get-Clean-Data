@@ -1,0 +1,160 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Variables in the cleaned "Human Activity Recognition Using Smartphones" data set
+
+* subject  
+  Integer identifier for each subject in the study (all were adults ages 19-48).  
+  
+* activity  
+  Activities performed by each subject in the study.  
+  The values are:  
+    + walking  
+    + walking_upstairs  
+    + walking_downstairs  
+    + sitting  
+    + standing  
+    + laying  
+    
+\newline    
+    
+* tBodyAcc.mean.X  
+* tBodyAcc.mean.Y  
+* tBodyAcc.mean.Z  
+  The mean x, y, and z-coordinates of the body acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tBodyAcc.std.X  
+* tBodyAcc.std.Y  
+* tBodyAcc.std.Z  
+  The standard deviations of the x, y, and z-coordinates of the body acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tGravityAcc.mean.X  
+* tGravityAcc.mean.Y  
+* tGravityAcc.mean.Z  
+  The mean x, y, and z-coordinates of the gravity acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tGravityAcc.std.X  
+* tGravityAcc.std.Y  
+* tGravityAcc.std.Z  
+  The standard deviations of the x, y, and z-coordinates of the gravity acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tBodyAccJerk.mean.X  
+* tBodyAccJerk.mean.Y  
+* tBodyAccJerk.mean.Z  
+  The mean x, y, and z-coordinates of the body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+
+* tBodyAccJerk.std.X  
+* tBodyAccJerk.std.Y  
+* tBodyAccJerk.std.Z  
+  The standard deviations of the x, y, and z-coordinates of the body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+  
+* tBodyGyro.mean.X  
+* tBodyGyro.mean.Y  
+* tBodyGyro.mean.Z  
+  The mean x, y, and z-coordinates of the body gyroscope signals collected by a smartphone on the subject's waist.  
+
+* tBodyGyro.std.X  
+* tBodyGyro.std.Y  
+* tBodyGyro.std.Z  
+  The standard deviations of the x, y, and z-coordinates of the body gyroscope signals collected by a smartphone on the subject's waist.  
+  
+* tBodyGyroJerk.mean.X  
+* tBodyGyroJerk.mean.Y  
+* tBodyGyroJerk.mean.Z  
+  The mean x, y, and z-coordinates of the body gyroscope Jerk signals collected by a smartphone on the subject's waist.  
+  
+* tBodyGyroJerk.std.X  
+* tBodyGyroJerk.std.Y  
+* tBodyGyroJerk.std.Z  
+  The standard deviations of the x, y, and z-coordinates of the body gyroscope Jerk signals collected by a smartphone on the subject's waist.  
+  
+* tBodyAccMag.mean  
+* tBodyAccMag.std  
+  The mean and standard deviation, respectively, of the magnitude of the 3-dimensional body acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tGravityAccMag.mean  
+* tGravityAccMag.std  
+  The mean and standard deviation, respectively, of the magnitude of the 3-dimensional gravity acceleration signals collected by a smartphone on the subject's waist.  
+  
+* tBodyAccJerkMag.mean  
+* tBodyAccJerkMag.std  
+  The mean and standard deviation, respectively, of the magnitude of the 3-dimensional body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+
+* tBodyGyroMag.mean  
+* tBodyGyroMag.std  
+  The mean and standard deviation, respectively, of the magnitude of the 3-dimensional body gyroscope signals collected by a smartphone on the subject's waist.  
+
+* tBodyGyroJerkMag.mean  
+* tBodyGyroJerkMag.std  
+  The mean and standard deviation, respectively, of the magnitude of the 3-dimensional body gyroscope Jerk signals collected by a smartphone on the subject's waist.  
+
+* fBodyAcc.mean.X  
+* fBodyAcc.mean.Y  
+* fBodyAcc.mean.Z  
+  The means of the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body acceleration signals collected by a smartphone on the subject's waist.  
+
+* fBodyAcc.std.X  
+* fBodyAcc.std.Y  
+* fBodyAcc.std.Z  
+  The standard deviations of the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body acceleration signals collected by a smartphone on the subject's waist.  
+
+* fBodyAcc.meanFreq.X  
+* fBodyAcc.meanFreq.Y  
+* fBodyAcc.meanFreq.Z  
+  The result of taking a weighted average of the frequency components to obtain a mean frequency for the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body acceleration signals collected by a smartphone on the subject's waist.  
+
+* fBodyAccJerk.mean.X  
+* fBodyAccJerk.mean.Y  
+* fBodyAccJerk.mean.Z  
+  The mean of the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+
+* fBodyAccJerk.std.X  
+* fBodyAccJerk.std.Y  
+* fBodyAccJerk.std.Z  
+  The result of a Fast Fourier Transform on the standard deviations of the x, y, and z-coordinates of the body gyroscope Jerk signals collected by a smartphone on the subject's waist.  
+
+* fBodyAccJerk.meanFreq.X  
+* fBodyAccJerk.meanFreq.Y  
+* fBodyAccJerk.meanFreq.Z  
+  The result of taking a weighted average of the frequency components to obtain a mean frequency for the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+
+* fBodyGyro.mean.X  
+* fBodyGyro.mean.Y  
+* fBodyGyro.mean.Z  
+  The means of the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body gyroscope signals collected by a smartphone on the subject's waist.  
+
+* fBodyGyro.std.X  
+* fBodyGyro.std.Y  
+* fBodyGyro.std.Z  
+  The standard deviations of the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body gyroscope signals collected by a smartphone on the subject's waist.  
+
+* fBodyGyro.meanFreq.X  
+* fBodyGyro.meanFreq.Y  
+* fBodyGyro.meanFreq.Z  
+  The result of taking a weighted average of the frequency components to obtain a mean frequency for the result of a Fast Fourier Transform on the x, y, and z-coordinates of the body gyroscope signals collected by a smartphone on the subject's waist.  
+  
+* fBodyAccMag.mean  
+* fBodyAccMag.std             
+* fBodyAccMag.meanFreq   
+  The mean, standard deviation, and mean frequency (weighted average of the frequencies) respectively, of the magnitude of the 3-dimensional body acceleration signals collected by a smartphone on the subject's waist.  
+
+* fBodyBodyAccJerkMag.mean  
+* fBodyBodyAccJerkMag.std    
+* fBodyBodyAccJerkMag.meanFreq  
+  The mean, standard deviation, and mean frequency (weighted average of the frequencies) respectively, of the magnitude of the 3-dimensional body acceleration Jerk signals collected by a smartphone on the subject's waist.  
+
+* fBodyBodyGyroMag.mean  
+* fBodyBodyGyroMag.std        
+* fBodyBodyGyroMag.meanFreq  
+  The mean, standard deviation, and mean frequency (weighted average of the frequencies) respectively, of the magnitude of the 3-dimensional body gyroscope signals collected by a smartphone on the subject's waist.  
+
+* fBodyBodyGyroJerkMag.mean    
+* fBodyBodyGyroJerkMag.std  
+* fBodyBodyGyroJerkMag.meanFreq  
+  The mean, standard deviation, and mean frequency (weighted average of the frequencies) respectively, of the magnitude of the 3-dimensional body gyroscope Jerk signals collected by a smartphone on the subject's waist.  
